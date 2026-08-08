@@ -50,13 +50,13 @@ export default function Home() {
           <h1 className="max-w-4xl text-[clamp(3.5rem,13vw,7.5rem)] font-black leading-[0.86] tracking-[-0.075em]">
             Build every day.
             <br />
-            <span className="text-[#ff5c35]">Become visible.</span>
+            <span className="text-[#ff5c35]">Become undeniable.</span>
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-7 text-black/60 sm:text-xl sm:leading-8">
-            A 60-day coding challenge for Indian college students. Build
-            something every day, prove your progress, and create a public
-            record of what you can actually do.
+          <p className="mt-7 max-w-xl text-base leading-7 text-black/60 sm:text-xl sm:leading-8">
+            Stop collecting tutorials. Start collecting proof.
+            Build one real project every day for 60 days and turn
+            your progress into a public record of what you can do.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -77,9 +77,9 @@ export default function Home() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid max-w-2xl grid-cols-3 border-y border-black/10 py-6">
+        <div className="mt-14 grid max-w-2xl grid-cols-3 border-y border-black/10 py-6 sm:mt-16">
           {stats.map((stat) => (
-            <div key={stat.label} className="border-r border-black/10 px-3 first:pl-0 last:border-0">
+            <div key={stat.label} className="border-r border-black/10 px-2 first:pl-0 last:border-0 sm:px-3">
               <p className="text-2xl font-black tracking-tight sm:text-3xl">
                 {stat.value}
               </p>
