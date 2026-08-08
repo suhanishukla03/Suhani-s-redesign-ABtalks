@@ -40,3 +40,13 @@ Added a visual proof-of-work streak showing how daily builds become public evide
 
 **Result:**
 Added a track-selection section that makes the 60-day challenge more concrete and helps first-time visitors understand the different learning paths available.
+## Prompt 5 — Student Dashboard
+
+**Purpose:** Build the main student experience after joining the 60-day challenge.
+
+**Prompt:**
+
+> Build a mobile-first ABTalks student dashboard at /dashboard. The dashboard should immediately communicate the student's current streak, today's build, progress through the 60-day challenge, completed projects, proof points, and achievements. Use realistic mocked student data and design the experience around momentum rather than making it feel like an admin dashboard. Optimize the layout for the required 390px mobile viewport and include navigation to the challenge-day experience.
+
+**Result:**
+Created a student dashboard focused on daily momentum, with a 12-day streak, today's build, challenge progress, achievement cards, proof points, and navigation to the challenge-day route.
