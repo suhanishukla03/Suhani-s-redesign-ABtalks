@@ -1,69 +1,163 @@
-import Image from "next/image";
+const stats = [
+  { value: "60", label: "days to build" },
+  { value: "1", label: "project every day" },
+  { value: "2", label: "proofs of work" },
+];
+
+const steps = [
+  {
+    number: "01",
+    title: "Pick your track",
+    description: "Choose what you want to get better at and commit to the journey.",
+  },
+  {
+    number: "02",
+    title: "Build every day",
+    description: "Turn small daily challenges into real projects and stronger skills.",
+  },
+  {
+    number: "03",
+    title: "Show your work",
+    description: "Submit your GitHub commit and LinkedIn post. Make your progress visible.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="min-h-screen bg-[#f7f7f4] text-[#171717]">
+      {/* Header */}
+      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+        <a href="/" className="text-xl font-black tracking-[-0.06em]">
+          AB<span className="text-[#ff5c35]">Talks</span>
+        </a>
+
+        <a
+          href="/dashboard"
+          className="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold transition hover:bg-black hover:text-white"
+        >
+          Student login →
+        </a>
+      </header>
+
+      {/* Hero */}
+      <section className="mx-auto flex min-h-[680px] w-full max-w-6xl flex-col justify-center px-5 pb-16 pt-12 sm:px-8 sm:pt-20">
+        <div className="max-w-3xl">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-black/60">
+            <span className="h-2 w-2 rounded-full bg-[#ff5c35]" />
+            60-day build challenge
+          </div>
+
+          <h1 className="max-w-4xl text-[clamp(3.5rem,13vw,7.5rem)] font-black leading-[0.86] tracking-[-0.075em]">
+            Build every day.
+            <br />
+            <span className="text-[#ff5c35]">Become visible.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-8 max-w-xl text-lg leading-7 text-black/60 sm:text-xl sm:leading-8">
+            A 60-day coding challenge for Indian college students. Build
+            something every day, prove your progress, and create a public
+            record of what you can actually do.
           </p>
+
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="/dashboard"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-[#171717] px-7 text-base font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#ff5c35]"
+            >
+              Start your 60 days →
+            </a>
+
+            <a
+              href="#how-it-works"
+              className="inline-flex h-14 items-center justify-center rounded-full border border-black/10 bg-white px-7 text-base font-bold transition hover:bg-black/5"
+            >
+              See how it works
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+
+        {/* Stats */}
+        <div className="mt-16 grid max-w-2xl grid-cols-3 border-y border-black/10 py-6">
+          {stats.map((stat) => (
+            <div key={stat.label} className="border-r border-black/10 px-3 first:pl-0 last:border-0">
+              <p className="text-2xl font-black tracking-tight sm:text-3xl">
+                {stat.value}
+              </p>
+              <p className="mt-1 text-xs font-medium leading-4 text-black/50 sm:text-sm">
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section
+        id="how-it-works"
+        className="border-t border-black/10 bg-white px-5 py-20 sm:px-8 sm:py-28"
+      >
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-xl">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ff5c35]">
+              The system
+            </p>
+
+            <h2 className="mt-4 text-4xl font-black tracking-[-0.05em] sm:text-6xl">
+              Small builds.
+              <br />
+              Serious momentum.
+            </h2>
+
+            <p className="mt-5 text-base leading-7 text-black/55 sm:text-lg">
+              You don't need to become a different developer overnight.
+              You just need to show up, build, and leave evidence behind.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-3">
+            {steps.map((step) => (
+              <article
+                key={step.number}
+                className="rounded-3xl border border-black/10 bg-[#f7f7f4] p-6"
+              >
+                <p className="text-sm font-black text-[#ff5c35]">
+                  {step.number}
+                </p>
+
+                <h3 className="mt-12 text-xl font-black tracking-tight">
+                  {step.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-6 text-black/55">
+                  {step.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-[#171717] px-5 py-20 text-white sm:px-8 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ff8a6d]">
+            Your next 60 days
+          </p>
+
+          <h2 className="mt-5 max-w-3xl text-5xl font-black leading-[0.95] tracking-[-0.06em] sm:text-7xl">
+            Don't just learn.
+            <br />
+            Leave proof.
+          </h2>
+
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/dashboard"
+            className="mt-9 inline-flex h-14 items-center justify-center rounded-full bg-white px-7 text-base font-bold text-[#171717] transition hover:bg-[#ff5c35] hover:text-white"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            Begin the challenge →
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
