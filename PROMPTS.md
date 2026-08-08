@@ -50,3 +50,13 @@ Added a track-selection section that makes the 60-day challenge more concrete an
 
 **Result:**
 Created a student dashboard focused on daily momentum, with a 12-day streak, today's build, challenge progress, achievement cards, proof points, and navigation to the challenge-day route.
+## Prompt 6 — Challenge Day Experience
+
+**Purpose:** Build the complete experience for an individual ABTalks challenge day.
+
+**Prompt:**
+
+> Build a mobile-first Challenge Day experience at /day/12 for the ABTalks 60-day coding challenge. The page should make the daily mission immediately understandable, show what the student needs to build and practice, provide a build checklist, and let the student submit GitHub and LinkedIn proof of work. Require both proof links before allowing completion. Include a clear completed state that reinforces the student's learning streak. Optimize everything for a 390px mobile viewport.
+
+**Result:**
+Created an interactive Day 12 mission page with the challenge brief, learning goals, build checklist, GitHub and LinkedIn proof submission, validation, and a completion state that reinforces continued progress.
