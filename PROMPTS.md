@@ -30,3 +30,13 @@ Created the first ABTalks landing page with a bold editorial visual style, respo
 
 **Result:**
 Added a visual proof-of-work streak showing how daily builds become public evidence. The section communicates the relationship between consistency, GitHub commits, LinkedIn posts, and the 60-day journey.
+## Prompt 4 — Challenge Tracks
+
+**Purpose:** Make the challenge concrete for first-time visitors.
+
+**Prompt:**
+
+> Add a mobile-first "Choose your track" section to the ABTalks landing page. The section should explain that students choose a learning direction for the 60-day challenge. Create three realistic tracks: Build in Public, AI Engineer, and Data & ML. Each card should communicate what the student will build or learn and include a clear action. Keep the visual system consistent with the existing ABTalks design and optimize the cards for a 390px mobile viewport.
+
+**Result:**
+Added a track-selection section that makes the 60-day challenge more concrete and helps first-time visitors understand the different learning paths available.

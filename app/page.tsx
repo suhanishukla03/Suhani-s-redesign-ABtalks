@@ -184,6 +184,140 @@ export default function Home() {
           </div>
         </div>
       </section>
+            {/* Choose your track */}
+      <section className="border-t border-black/10 bg-white px-5 py-20 sm:px-8 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ff5c35]">
+              Choose your direction
+            </p>
+
+            <h2 className="mt-4 text-4xl font-black leading-[0.95] tracking-[-0.05em] sm:text-6xl">
+              One challenge.
+              <br />
+              Your own path.
+            </h2>
+
+            <p className="mt-5 max-w-xl text-base leading-7 text-black/55 sm:text-lg">
+              Pick a track that matches what you want to become. The goal
+              isn't to watch more tutorials. It's to build more things.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-4 lg:grid-cols-3">
+            {/* Build in Public */}
+            <article className="group flex flex-col rounded-3xl border border-black/10 bg-[#f7f7f4] p-6 transition hover:-translate-y-1 hover:border-black/20">
+              <div className="flex items-center justify-between">
+                <span className="text-3xl">◈</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-black/50">
+                  60 days
+                </span>
+              </div>
+
+              <h3 className="mt-12 text-2xl font-black tracking-tight">
+                Build in Public
+              </h3>
+
+              <p className="mt-3 text-sm leading-6 text-black/55">
+                Ship websites, apps, and real projects while building a
+                public record of your progress.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["Frontend", "Full-stack", "Projects"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-black/10 bg-white px-3 py-1.5 text-xs font-semibold"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href="/dashboard"
+                className="mt-8 flex h-12 items-center justify-center rounded-full bg-[#171717] text-sm font-bold text-white transition group-hover:bg-[#ff5c35]"
+              >
+                Explore track →
+              </a>
+            </article>
+
+            {/* AI Engineer */}
+            <article className="group flex flex-col rounded-3xl border border-[#ff5c35]/30 bg-[#fff5f1] p-6 transition hover:-translate-y-1 hover:border-[#ff5c35]">
+              <div className="flex items-center justify-between">
+                <span className="text-3xl">✦</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-[#ff5c35]">
+                  Popular
+                </span>
+              </div>
+
+              <h3 className="mt-12 text-2xl font-black tracking-tight">
+                AI Engineer
+              </h3>
+
+              <p className="mt-3 text-sm leading-6 text-black/55">
+                Build AI-powered products and learn the systems behind
+                RAG, agents, APIs, and modern AI applications.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["RAG", "Agents", "AI Apps"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-[#ff5c35]/15 bg-white px-3 py-1.5 text-xs font-semibold"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href="/dashboard"
+                className="mt-8 flex h-12 items-center justify-center rounded-full bg-[#ff5c35] text-sm font-bold text-white transition hover:bg-[#171717]"
+              >
+                Explore track →
+              </a>
+            </article>
+
+            {/* Data & ML */}
+            <article className="group flex flex-col rounded-3xl border border-black/10 bg-[#f7f7f4] p-6 transition hover:-translate-y-1 hover:border-black/20">
+              <div className="flex items-center justify-between">
+                <span className="text-3xl">⌁</span>
+                <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-black/50">
+                  60 days
+                </span>
+              </div>
+
+              <h3 className="mt-12 text-2xl font-black tracking-tight">
+                Data & ML
+              </h3>
+
+              <p className="mt-3 text-sm leading-6 text-black/55">
+                Work with real datasets, Python, machine learning concepts,
+                and projects that turn data into useful decisions.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {["Python", "ML", "Data"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-black/10 bg-white px-3 py-1.5 text-xs font-semibold"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href="/dashboard"
+                className="mt-8 flex h-12 items-center justify-center rounded-full bg-[#171717] text-sm font-bold text-white transition group-hover:bg-[#ff5c35]"
+              >
+                Explore track →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
 
       {/* How it works */}
       <section
