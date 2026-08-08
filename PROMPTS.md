@@ -60,3 +60,13 @@ Created a student dashboard focused on daily momentum, with a 12-day streak, tod
 
 **Result:**
 Created an interactive Day 12 mission page with the challenge brief, learning goals, build checklist, GitHub and LinkedIn proof submission, validation, and a completion state that reinforces continued progress.
+## Prompt 7 — Student Dashboard
+
+**Purpose:** Build the main student home screen after joining the ABTalks challenge.
+
+**Prompt:**
+
+> Build a mobile-first ABTalks student dashboard at /dashboard for a 60-day coding challenge. Show the student's current streak, challenge progress, today's task, overall completion, proof collected, and achievements. Include thoughtful real-world states for a missed day and an incomplete profile. The dashboard should encourage students to return after missing a day rather than making them feel punished. Link today's task to /day/12 and optimize the experience for a 390px mobile viewport.
+
+**Result:**
+Created a responsive student dashboard with streak tracking, challenge progress, today's mission, completion statistics, achievements, an incomplete-profile state, and a recovery-oriented missed-day experience.
