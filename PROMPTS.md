@@ -70,3 +70,13 @@ Created an interactive Day 12 mission page with the challenge brief, learning go
 
 **Result:**
 Created a responsive student dashboard with streak tracking, challenge progress, today's mission, completion statistics, achievements, an incomplete-profile state, and a recovery-oriented missed-day experience.
+## Prompt 8 — Landing Page Polish
+
+**Purpose:** Refine the landing page after the initial implementation.
+
+**Prompt:**
+
+> Polish the existing ABTalks landing page without changing its overall structure. Strengthen the hero messaging, make the challenge value proposition more direct, and improve spacing and readability at a 390px mobile viewport while preserving the existing sections and navigation.
+
+**Result:**
+Refined the landing page messaging and mobile spacing while preserving the existing ABTalks visual system and page structure.
