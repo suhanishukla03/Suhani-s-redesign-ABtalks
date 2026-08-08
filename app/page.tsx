@@ -90,6 +90,100 @@ export default function Home() {
           ))}
         </div>
       </section>
+            {/* Proof of work */}
+      <section className="border-t border-black/10 bg-[#f7f7f4] px-5 py-20 sm:px-8 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#ff5c35]">
+              Your public streak
+            </p>
+
+            <h2 className="mt-4 text-4xl font-black leading-[0.95] tracking-[-0.05em] sm:text-5xl">
+              Every day
+              <br />
+              leaves proof.
+            </h2>
+
+            <p className="mt-5 max-w-md text-base leading-7 text-black/55">
+              Your learning isn't hidden inside a notebook. Every challenge
+              becomes evidence you can show to the world.
+            </p>
+
+            <div className="mt-7 rounded-2xl border border-black/10 bg-white p-4">
+              <p className="text-sm font-bold">60 days → 60 pieces of proof</p>
+              <p className="mt-1 text-xs leading-5 text-black/50">
+                Build it. Commit it. Share it. Keep the streak alive.
+              </p>
+            </div>
+          </div>
+
+          <div className="rounded-3xl border border-black/10 bg-white p-4 shadow-sm sm:p-6">
+            <div className="flex items-center justify-between border-b border-black/10 pb-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-black/40">
+                  Current streak
+                </p>
+                <p className="mt-1 text-3xl font-black tracking-tight">
+                  12 days 🔥
+                </p>
+              </div>
+
+              <div className="rounded-full bg-[#fff0eb] px-3 py-1.5 text-xs font-bold text-[#ff5c35]">
+                20% complete
+              </div>
+            </div>
+
+            <div className="mt-5 grid grid-cols-4 gap-2 sm:grid-cols-6">
+              {[
+                { day: "01", complete: true },
+                { day: "02", complete: true },
+                { day: "03", complete: true },
+                { day: "04", complete: true },
+                { day: "05", complete: true },
+                { day: "06", complete: true },
+                { day: "07", complete: true },
+                { day: "08", complete: true },
+                { day: "09", complete: true },
+                { day: "10", complete: true },
+                { day: "11", complete: true },
+                { day: "12", complete: true },
+                { day: "13", complete: false },
+                { day: "14", complete: false },
+                { day: "15", complete: false },
+                { day: "16", complete: false },
+                { day: "17", complete: false },
+                { day: "18", complete: false },
+              ].map((item) => (
+                <div
+                  key={item.day}
+                  className={`flex aspect-square flex-col items-center justify-center rounded-xl border text-xs font-bold ${
+                    item.complete
+                      ? "border-[#ff5c35] bg-[#ff5c35] text-white"
+                      : "border-black/10 bg-[#f7f7f4] text-black/30"
+                  }`}
+                >
+                  <span>{item.day}</span>
+                  {item.complete && (
+                    <span className="mt-0.5 text-[9px]">✓ proof</span>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-5 grid grid-cols-2 gap-3">
+              <div className="rounded-2xl bg-[#f7f7f4] p-4">
+                <p className="text-lg font-black">12/12</p>
+                <p className="mt-1 text-xs text-black/45">GitHub commits</p>
+              </div>
+
+              <div className="rounded-2xl bg-[#f7f7f4] p-4">
+                <p className="text-lg font-black">12/12</p>
+                <p className="mt-1 text-xs text-black/45">LinkedIn posts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* How it works */}
       <section

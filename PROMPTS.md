@@ -20,3 +20,13 @@ Established the product direction, mobile-first approach, required routes, featu
 
 **Result:**
 Created the first ABTalks landing page with a bold editorial visual style, responsive layout, challenge messaging, statistics, three-step explanation, and calls to action.
+## Prompt 3 — Proof-of-Work Streak
+
+**Purpose:** Make the core ABTalks product mechanic visible on the landing page.
+
+**Prompt:**
+
+> Add a distinctive Proof-of-Work Streak section to the ABTalks landing page. The section should communicate that every challenge day creates public evidence through GitHub commits and LinkedIn posts. Show a realistic 60-day streak with completed and upcoming days, current streak, completion percentage, and GitHub/LinkedIn proof counts. Keep the design mobile-first and consistent with the existing visual system.
+
+**Result:**
+Added a visual proof-of-work streak showing how daily builds become public evidence. The section communicates the relationship between consistency, GitHub commits, LinkedIn posts, and the 60-day journey.
